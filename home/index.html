@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Teko&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Teko&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/react@17/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" type="image/x-icon" href="./Assets/Asset 201-12.png"/>
+    <link rel="stylesheet" href="./styles.css">
+    <title>RESILIENCE</title>
+</head>
+<body>
+    <div>
+        <nav class="navbar">
+            <a href="./index.html" ><img class="image_R" src="./Assets/Asset 191-8.png" ></a>
+            <ul>
+                <li><a href="./index.html" class="nav_bar_items">Home</a></li>
+                <li><a href="../shop/Winter/shop.html" class="nav_bar_items">Shop</a></li>
+                <li><a href="../Contact/contact.html" class="nav_bar_items">Contact</a></li>
+                <li><a href="../about us/about.html" class="nav_bar_items">About us</a></li>
+                <li class="add_cart"><img src="./Assets/icons8-shopping-cart-30.png" class="shopping_cart">
+                <div class="num_add_cart"><span class="num_add_cart1">0</span></div>
+                <div class="profile">
+                    <a href="../login-register/login/login.html">
+                        <svg data-aid="account-login" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" class="icon-hover-classes cursor-pointer">
+                            <rect width="16" height="16" fill="none"></rect>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M3.07973 6.39395C3.07973 9.11133 5.2826 11.3142 7.99997 11.3142C10.7173 11.3142 12.9202 9.11133 12.9202 6.39395C12.9202 3.67658 10.7173 1.47371 7.99997 1.47371C5.2826 1.47371 3.07973 3.67658 3.07973 6.39395ZM4.9537 12.017C5.85933 12.5086 6.89704 12.7879 7.99997 12.7879C9.10291 12.7879 10.1406 12.5086 11.0463 12.017L14.9394 15.9101L16 14.8494L12.2878 11.1371C13.5813 9.96713 14.3939 8.27545 14.3939 6.39395C14.3939 2.86267 11.5313 0 7.99997 0C4.46869 0 1.60602 2.86267 1.60602 6.39395C1.60602 8.27546 2.4187 9.96716 3.71219 11.1372L-2.66474e-05 14.8494L1.06063 15.9101L4.9537 12.017Z" fill="white"></path>
+                            </svg>
+                    </a>
+                </div>
+                </li>
+            </ul>
+        </nav>
+        <section id="nav_bar_position">
+        </section>
+        <div id="cart" class="cart">
+            <div class="cart-header">
+                <h2>Your Cart</h2>
+                <span id="close-cart" class="close-cart">
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2.66 1.34 2 .68.68 2l.66.66 1.32-1.32zm18.68 21.32.66.66L23.32 22l-.66-.66-1.32 1.32zm1.32-20 .66-.66L22 .68l-.66.66 1.32 1.32zM1.34 21.34.68 22 2 23.32l.66-.66-1.32-1.32zm0-18.68 10 10 1.32-1.32-10-10-1.32 1.32zm11.32 10 10-10-1.32-1.32-10 10 1.32 1.32zm-1.32-1.32-10 10 1.32 1.32 10-10-1.32-1.32zm0 1.32 10 10 1.32-1.32-10-10-1.32 1.32z" fill="black"></path></svg>
+                </span>
+            </div>
+            <hr class="cart_hr_bfr_content">
+            <div class="cart-content"></div>
+            <hr class="subtot_hr">
+            <div class="subtotal_content">
+                <div class="Subtotal_div">
+                    <h3 class="Subtotal">Subtotal</h3>
+                    <p><span class="Subtotal-price">LE 0.00 EGP</span></p>
+                </div>
+                <div class="Taxes">
+                    <p class="Taxes_checkout">Taxes and shipping calculated at checkout</p>
+                </div>
+                <div class="Check_Out_button">
+                    <a href="../Check-out/checkout.html" class="Check_Out_button">
+                        <button class="Check_Out btn_order">CheckOut</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <section id="main">
+            <div class="img_cont">
+                <div  class="blured_img" id="animatedDiv1">
+                    <a href="../shop/Winter/shop.html" class="label_shop1 label">WINTER DROP V1</a>
+                    <hr class="hr_blur_img hr_anim">
+                    <div class="EXPLORE_label anim_explo">EXPLORE COLLECTION NOW</div>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="arrow arrow_anim" viewBox="0 0 512 512"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="25" d="M268 112l144 144-144 144M392 256H100"/></svg>
+                    <div class="img_shoot1 img"></div>
+                </div>
+                <div class="blured_img animatedDiv" id="animatedDiv2">
+                    <a href="../shop/Summer/shop2.html" class="label_shop2 label">SUMMER DROP V1</a>
+                    <hr class="hr_blur_img2 hr_anim">
+                    <div class="EXPLORE_label2 anim_explo">EXPLORE COLLECTION NOW</div>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="arrow2 arrow_anim" viewBox="0 0 512 512"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="25" d="M268 112l144 144-144 144M392 256H100"/></svg>
+                    <div class="img_shoot2 img"></div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="moving-bar">
+                <div class="moving-bar-cont">
+                    <!-- <span>"UNLEASH YOUR FEARLESS STRENGTH"</span> -->
+                    <span>OVERPOWERED</span>
+                    <span>RESILIENCE</span>
+                    <span>RIGIDITY</span>
+                </div>
+                <div class="moving-bar-cont">
+                    <!-- <span>"RESILIENCE BEYOND FASHION"</span> -->
+                    <span>OVERPOWERED</span>
+                    <span>RESILIENCE</span>
+                    <span>RIGIDITY</span>
+                </div>
+                <div class="moving-bar-cont">
+                    <!-- <span>"FEARLESS IN THE FACE OF ALL"</span> -->
+                    <span>OVERPOWERED</span>
+                    <span>RESILIENCE</span>
+                    <span>RIGIDITY</span>
+                </div>
+            </div>
+        </section>
+        <!-- <div class="arrow_cont">
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="ionicon arrow_left_products" viewBox="0 0 512 512">
+                    <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="24" d="M244 400L100 256l144-144M120 256h292"/>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" class="ionicon arrow_right_products" viewBox="0 0 512 512">
+                    <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="24" d="M268 112l144 144-144 144M392 256H100"/>
+                </svg>
+            </div>
+        </div> -->
+        <section class="products_div">
+            <div class="product_div_child">
+                <div class="product1_hoodie products scroll_animation_product">
+                    <img src="./Assets/PALPATINE PULLOVER.webp">
+                    <a href="#">PALPATINE PULLOVER</a>
+                    <div class="sizes_cont">
+                        <span class="size">S</span>
+                        <span class="size">M</span>
+                        <span class="size">L</span>
+                        <span class="size">XL</span>
+                    </div>
+                    <p class="product_price">LE 900.00</p>
+                    <button class="btn" data-img-src="./Assets/PALPATINE PULLOVER.webp" data-price="900.00" data-name="PALPATINE PULLOVER">Add To Cart</button>
+                </div>
+                <div class="product2_hoodie products scroll_animation_product">
+                    <img src="./Assets/JEDI HOODIE.webp">
+                    <a href="#">JEDI HOODIE</a>
+                    <div class="sizes_cont">
+                        <span class="size">S</span>
+                        <span class="size">M</span>
+                        <span class="size">L</span>
+                        <span class="size">XL</span>
+                    </div>
+                    <p class="product_price">LE 900.00</p>
+                    <button class="btn" data-img-src="./Assets/JEDI HOODIE.webp" data-price="900.00" data-name="JEDI HOODIE">Add To Cart</button>
+                </div>  
+                <div class="product3_hoodie products scroll_animation_product">
+                    <img src="./Assets/DIVINE INFLUENCE.webp">
+                    <a href="#">DIVINE INFLUENCE</a>
+                    <div class="sizes_cont">
+                        <span class="size">S</span>
+                        <span class="size">M</span>
+                        <span class="size">L</span>
+                        <span class="size">XL</span>
+                    </div>
+                    <p class="product_price">LE 900.00</p>
+                    <button class="btn" data-img-src="./Assets/DIVINE INFLUENCE.webp" data-price="900.00" data-name="DIVINE INFLUENCE">Add To Cart</button>
+                </div>
+                <div class="product4_hoodie products scroll_animation_product">
+                    <div>
+                        <img src="./Assets/ANNIVERSARY.jpg">
+                        
+                    </div>
+                    <a href="#">ANNIVERSARY</a>
+                    <div class="sizes_cont">
+                        <span class="size">S</span>
+                        <span class="size">M</span>
+                        <span class="size">L</span>
+                        <span class="size">XL</span>
+                    </div>
+                    <p class="product_price">LE 900.00</p>
+                    <button class="btn" data-img-src="./Assets/ANNIVERSARY.jpg" data-price="900.00" data-name="ANNIVERSARY">Add To Cart</button>
+                </div>
+            </div>
+        </section>
+        <footer>
+                <div class="svg_instagram_icon_parent">
+                    <span class="follow_us_label">FOLLOW US</span>
+                    <a href="https://www.instagram.com/resilience.clo/?utm_source=ig_web_button_share_sheet&igshid=OGQ5ZDc2ODk2ZA=="><svg class="svg_instagram_icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7.8,2H16.2C19.4,2 22,4.6 22,7.8V16.2A5.8,5.8 0 0,1 16.2,22H7.8C4.6,22 2,19.4 2,16.2V7.8A5.8,5.8 0 0,1 7.8,2M7.6,4A3.6,3.6 0 0,0 4,7.6V16.4C4,18.39 5.61,20 7.6,20H16.4A3.6,3.6 0 0,0 20,16.4V7.6C20,5.61 18.39,4 16.4,4H7.6M17.25,5.5A1.25,1.25 0 0,1 18.5,6.75A1.25,1.25 0 0,1 17.25,8A1.25,1.25 0 0,1 16,6.75A1.25,1.25 0 0,1 17.25,5.5M12,7A5,5 0 0,1 17,12A5,5 0 0,1 12,17A5,5 0 0,1 7,12A5,5 0 0,1 12,7M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9Z" fill="white"></path></svg></a>
+                </div>
+                <div class="footer_Rights_Reserved">
+                    <h6>© 2023 RESILIENCE. All Rights Reserved. </h6>
+                </div>
+                <div id="rslnc_3d_white_cont">
+                    <img class="rslnc_3d_white" src="./Assets/3dgifmaker85689.gif">
+                </div>
+        </footer>
+    </div>
+    <div id="loading-screen" class="loading-screen">
+        <div class="spinner"></div>
+    </div>
+    <script>
+        $(document).ready(function() {
+            $("#animatedDiv1").animate({
+                opacity: 1,
+                top:0
+            }, 800);
+            $("#animatedDiv2").animate({
+                opacity: 1,
+                top:0
+            }, 800);
+            setTimeout(()=>{
+                $(".hr_anim").animate({
+                    opacity: 0.7,
+                    top:390
+                })
+            },800)
+            setTimeout(()=>{
+                $(".label").animate({
+                    opacity: 1,
+                    top: 350
+                })
+            },800)
+            setTimeout(()=>{
+                $(".anim_explo").animate({
+                    opacity: 0.8,
+                    left: 60
+                })
+            },1400)
+            setTimeout(()=>{
+                $(".arrow_anim").animate({
+                    opacity: 1,
+                    right: 60
+                })
+            },1000)
+            setTimeout(()=>{
+                $(".moving-bar").animate({
+                    opacity: 1,
+                    top: 0
+                },1200)
+            },1100)
+
+
+
+            //scroll_animation
+            function isInViewport(el) {
+                const elementTop = $(el).offset().top;
+                const elementBottom = elementTop + $(el).outerHeight();
+                const viewportTop = $(window).scrollTop();
+                const viewportBottom = viewportTop + $(window).height();
+                return elementBottom > viewportTop && elementTop < viewportBottom;
+            }
+
+            // Trigger animation on scroll
+            $(window).on('scroll', function() {
+                $('.scroll_animation_product').each(function() {
+                    if (isInViewport(this)) {
+                        $(this).addClass('animate');
+                    } else {
+                        $(this).removeClass('animate');
+                    }
+                });
+            });
+            $(window).trigger('scroll');
+        });
+    </script>
+    <script type="module" src="./index.js"></script>
+</body>
+
+</html>
+
+<!-- <script type="text/babel">
+
+
+        const { useState } = React;
+
+        const Slideshow = ({ images }) => {
+            const [currentImageIndex, setCurrentImageIndex] = useState(0);
+            const [isLoading, setIsLoading] = useState(false);
+
+            const goToNextImage = () => {
+                setIsLoading(true);
+                // Simulate loading time
+                setTimeout(() => {
+                    setCurrentImageIndex((prevIndex) =>
+                        prevIndex === images.length - 1 ? 0 : prevIndex + 1
+                    );
+                    setIsLoading(false);
+                }, 500);
+            };
+
+            const goToPreviousImage = () => {
+                setIsLoading(true);
+                // Simulate loading time
+                setTimeout(() => {
+                    setCurrentImageIndex((prevIndex) =>
+                        prevIndex === 0 ? images.length - 1 : prevIndex - 1
+                    );
+                    setIsLoading(false);
+                }, 500);
+            };
+
+            return (
+                <div>
+                    {isLoading ? (
+                        <div>Loading...</div>
+                    ) : (
+                        <img src={images[currentImageIndex]} alt="Slideshow" />
+                    )}
+                    <button onClick={goToPreviousImage}>Previous</button>
+                    <button onClick={goToNextImage}>Next</button>
+                </div>
+            );
+        };
+
+        const App = () => {
+            const images = [
+                "./Assets/RSLNC._page-0007.jpg",
+                "./Assets/RSLNC._page-0008.jpg",
+                "./Assets/RSLNC._page-0009.jpg",
+                "./Assets/RSLNC._page-00010.jpg"
+            ];
+
+            return <Slideshow images={images} />;
+        };
+
+        ReactDOM.render(<App />, document.getElementById('root'));
+    </script> -->
+

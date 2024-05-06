@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Teko&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="shortcut icon" type="image/x-icon" href="./Assets/Asset 201-8.png" />
+    <link rel="stylesheet" href="./checkout.css">
+    <title>RESILIENCE</title>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="../home/index.html" ><img class="image_R" src="./Assets/Asset 191-8.png" ></a>
+    </nav>
+    <section id="main">
+        <div class="form_wrapper">
+            <div class="form_box">
+                <form action="http://localhost/Web%20Project/Check-out/checkout.php" method="post">
+                    <div class="Contact">
+                        <h2>Contact</h2>
+                        <div class="input_box">
+                            <span class="mail_icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="mail_icon icon" viewBox="0 0 512 512"><rect x="48" y="96" width="416" height="320" rx="40" ry="40" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M112 160l144 112 144-112"/></svg>
+                            </span>
+                            <input type="email" name="email" id="email" required>
+                            <label for="email" class="label">Email</label>
+                            <div class="error">please enter an Email</div>
+                        </div>
+                    </div>
+
+                    <div class="Delivery">
+                        <h2>Shipping Address</h2>
+                        <div class="input_box">
+                            <label for="delivery" class="Country_Region">Country/Region</label>
+                            <span class="arrow_icon">
+                                <svg class="arrow_down" xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="48" d="M112 184l144 144 144-144"/></svg>
+                            </span>
+                            <select id="delivery" name="delivery" class="Country_Region2" required>
+                                <option value="Egypt" class="region">Egypt</option>
+                            </select>
+                        </div>                        
+                        <div class="Name">
+                            <div class="input_box">
+                                <input type="text" id="first_name" name="first_name" class="fname" required>
+                                <label for="first_name" class="label">First Name</label>
+                                <div class="error">please enter a First name</div>
+                            </div>
+                            <div class="input_box">
+                                <input type="text" id="last_name" name="last_name" class="fname" required>
+                                <label for="last_name" class="label">Last Name</label>
+                                <div class="error">please enter a Last name</div>
+                            </div>
+                        </div>
+
+                        <div class="input_box">
+                            <input type="text" id="address" name="address" required>
+                            <label for="address" class="label">Address</label>
+                            <div class="error">please enter an Address</div>
+                        </div>
+                        <div class="city_info">
+                            <div class="input_box">
+                                <input type="text" id="city" name="city" class="city" required>
+                                <label for="city" class="label">City</label>
+                                <div class="error">please enter a City</div>
+                            </div>
+    
+                            <div class="input_box">
+                                <span class="arrow_icon">
+                                    <svg class="arrow_down" xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="48" d="M112 184l144 144 144-144"/></svg>
+                                </span>
+                                <select id="governorate" name="governorate" class="city">
+                                    <option disabled selected value="">Governorate</option>
+                                    <option value="6th of October">6th of October</option>
+                                    <option value="Cairo">Cairo</option>
+                                    <option value="Alexandria">Alexandria</option>
+                                    <option value="Giza">Giza</option>
+                                    <option value="Luxor">Luxor</option>
+                                    <option value="Aswan">Aswan</option>
+                                    <option value="Qena">Qena</option>
+                                    <option value="Sohag">Sohag</option>
+                                    <option value="Assiut">Assiut</option>
+                                    <option value="Minya">Minya</option>
+                                    <option value="Beni Suef">Beni Suef</option>
+                                    <option value="Ismailia">Ismailia</option>
+                                    <option value="Port Said">Port Said</option>
+                                    <option value="Suez">Suez</option>
+                                    <option value="Red Sea">Red Sea</option>
+                                    <option value="North Sinai">North Sinai</option>
+                                    <option value="South Sinai">South Sinai</option>
+                                    <option value="Kafr El Sheikh">Kafr El Sheikh</option>
+                                    <option value="Dakahlia">Dakahlia</option>
+                                    <option value="Sharqia">Sharqia</option>
+                                    <option value="Gharbia">Gharbia</option>
+                                    <option value="Monufia">Monufia</option>
+                                    <option value="Beheira">Beheira</option>
+                                    <option value="Ismailia">Ismailia</option>
+                                    <option value="Kafr El Sheikh">Kafr El Sheikh</option>
+                                    <option value="Damietta">Damietta</option>
+                                </select>
+                                <div class="error">please Choose an governorate</div>
+                            </div>
+    
+                            <div class="input_box">
+                                <input type="text" id="postal_code" name="postal_code" class="city" required >
+                                <label for="postal_code" class="label">Postal Code</label>
+                                <div class="error">please enter a postal code</div>
+                            </div>
+                        </div>
+
+
+                        <div class="input_box">
+                            <input type="tel" id="phone" name="phone" required>
+                            <label for="phone" class="label">Phone</label>
+                            <div class="error">please enter a phone number</div>
+                        </div>
+                    </div>
+                    <div class="Complete_Order_button">
+                        <div class="Complete_Order_button">
+                            <button class="Complete_Order btn">Complete Order</button>
+                        </div>
+                    </div>
+                </form>            
+        </div>
+        <!-- Loading Screen Element -->
+        <div id="loading-screen" class="loading-screen">
+            <!-- Your spinner or loading indicator -->
+            <div class="spinner"></div>
+        </div>
+
+        </div>
+        <div class="products">
+            <div class="cart-items"></div>
+        </div>
+    </section>
+    <footer>
+        <h6>© 2023 RSLNC. All Rights Reserved. </h6>
+    </footer>
+    <script src="./checkout.js"></script>
+</body>
+</html>
+<!-- <svg fill="#000000" height="800px" width="800px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+	 viewBox="0 0 512 512" xml:space="preserve">
+<g>
+	<path d="M474.045,173.813c-4.201,1.371-6.494,5.888-5.123,10.088c7.571,23.199,11.411,47.457,11.411,72.1
+		c0,62.014-24.149,120.315-68,164.166s-102.153,68-164.167,68s-120.316-24.149-164.167-68S16,318.014,16,256
+		S40.149,135.684,84,91.833s102.153-68,164.167-68c32.889,0,64.668,6.734,94.455,20.017c28.781,12.834,54.287,31.108,75.81,54.315
+		c3.004,3.239,8.066,3.431,11.306,0.425c3.24-3.004,3.43-8.065,0.426-11.306c-23-24.799-50.26-44.328-81.024-58.047
+		C317.287,15.035,283.316,7.833,248.167,7.833c-66.288,0-128.608,25.813-175.48,72.687C25.814,127.392,0,189.712,0,256
+		c0,66.287,25.814,128.607,72.687,175.479c46.872,46.873,109.192,72.687,175.48,72.687s128.608-25.813,175.48-72.687
+		c46.873-46.872,72.687-109.192,72.687-175.479c0-26.332-4.105-52.26-12.201-77.064
+		C482.762,174.736,478.245,172.445,474.045,173.813z"/>
+	<path d="M504.969,83.262c-4.532-4.538-10.563-7.037-16.98-7.037s-12.448,2.499-16.978,7.034l-7.161,7.161
+		c-3.124,3.124-3.124,8.189,0,11.313c3.124,3.123,8.19,3.124,11.314-0.001l7.164-7.164c1.51-1.512,3.52-2.344,5.66-2.344
+		s4.15,0.832,5.664,2.348c1.514,1.514,2.348,3.524,2.348,5.663s-0.834,4.149-2.348,5.663L217.802,381.75
+		c-1.51,1.512-3.52,2.344-5.66,2.344s-4.15-0.832-5.664-2.348L98.747,274.015c-1.514-1.514-2.348-3.524-2.348-5.663
+		c0-2.138,0.834-4.149,2.351-5.667c1.51-1.512,3.52-2.344,5.66-2.344s4.15,0.832,5.664,2.348l96.411,96.411
+		c1.5,1.5,3.535,2.343,5.657,2.343s4.157-0.843,5.657-2.343l234.849-234.849c3.125-3.125,3.125-8.189,0-11.314
+		c-3.124-3.123-8.189-3.123-11.313,0L212.142,342.129l-90.75-90.751c-4.533-4.538-10.563-7.037-16.98-7.037
+		s-12.448,2.499-16.978,7.034c-4.536,4.536-7.034,10.565-7.034,16.977c0,6.412,2.498,12.441,7.034,16.978l107.728,107.728
+		c4.532,4.538,10.563,7.037,16.98,7.037c6.417,0,12.448-2.499,16.977-7.033l275.847-275.848c4.536-4.536,7.034-10.565,7.034-16.978
+		S509.502,87.794,504.969,83.262z"/>
+</g>
+</svg> -->
